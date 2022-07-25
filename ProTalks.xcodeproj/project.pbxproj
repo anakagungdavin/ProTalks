@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3035DC8F288BCEAE00DD4F97 /* Moduls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3035DC8E288BCEAE00DD4F97 /* Moduls.swift */; };
+		3035DC91288BCF2200DD4F97 /* TextContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3035DC90288BCF2200DD4F97 /* TextContents.swift */; };
+		309378522887E1F20039C363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378512887E1F20039C363 /* AppDelegate.swift */; };
+		309378542887E1F20039C363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378532887E1F20039C363 /* SceneDelegate.swift */; };
+		309378562887E1F20039C363 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378552887E1F20039C363 /* HomeViewController.swift */; };
+		309378592887E1F20039C363 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309378572887E1F20039C363 /* HomeViewController.storyboard */; };
+		3093785B2887E1F50039C363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3093785A2887E1F50039C363 /* Assets.xcassets */; };
+		3093785E2887E1F50039C363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3093785C2887E1F50039C363 /* LaunchScreen.storyboard */; };
+		309378692887E1F50039C363 /* ProTalksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378682887E1F50039C363 /* ProTalksTests.swift */; };
+		309378732887E1F50039C363 /* ProTalksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378722887E1F50039C363 /* ProTalksUITests.swift */; };
+		309378752887E1F50039C363 /* ProTalksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378742887E1F50039C363 /* ProTalksUITestsLaunchTests.swift */; };
+		3093788C2889955C0039C363 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3093788B2889955C0039C363 /* HomeCollectionViewController.swift */; };
+		87B99B37742A0E388972A72F /* Pods_ProTalks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519151F6187D3B8BA462320F /* Pods_ProTalks.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		309378652887E1F50039C363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 309378462887E1F20039C363 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3093784D2887E1F20039C363;
+			remoteInfo = ProTalks;
+		};
+		3093786F2887E1F50039C363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 309378462887E1F20039C363 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3093784D2887E1F20039C363;
+			remoteInfo = ProTalks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3035DC8E288BCEAE00DD4F97 /* Moduls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moduls.swift; sourceTree = "<group>"; };
+		3035DC90288BCF2200DD4F97 /* TextContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextContents.swift; sourceTree = "<group>"; };
+		3093784E2887E1F20039C363 /* ProTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		309378512887E1F20039C363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		309378532887E1F20039C363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		309378552887E1F20039C363 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		309378582887E1F20039C363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeViewController.storyboard; sourceTree = "<group>"; };
+		3093785A2887E1F50039C363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3093785D2887E1F50039C363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3093785F2887E1F50039C363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		309378642887E1F50039C363 /* ProTalksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProTalksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		309378682887E1F50039C363 /* ProTalksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTalksTests.swift; sourceTree = "<group>"; };
+		3093786E2887E1F50039C363 /* ProTalksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProTalksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		309378722887E1F50039C363 /* ProTalksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTalksUITests.swift; sourceTree = "<group>"; };
+		309378742887E1F50039C363 /* ProTalksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTalksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3093788B2889955C0039C363 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		519151F6187D3B8BA462320F /* Pods_ProTalks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProTalks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82788231D7BAA3C0E7436571 /* Pods-ProTalks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProTalks.release.xcconfig"; path = "Target Support Files/Pods-ProTalks/Pods-ProTalks.release.xcconfig"; sourceTree = "<group>"; };
+		E47F1BBB16F3CDE8E6CC52A4 /* Pods-ProTalks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProTalks.debug.xcconfig"; path = "Target Support Files/Pods-ProTalks/Pods-ProTalks.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3093784B2887E1F20039C363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B99B37742A0E388972A72F /* Pods_ProTalks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309378612887E1F50039C363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3093786B2887E1F50039C363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E9C0B8A44B68DEFFBA97488 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E47F1BBB16F3CDE8E6CC52A4 /* Pods-ProTalks.debug.xcconfig */,
+				82788231D7BAA3C0E7436571 /* Pods-ProTalks.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3035DC8D288BCBC400DD4F97 /* Model  */ = {
+			isa = PBXGroup;
+			children = (
+				3035DC8E288BCEAE00DD4F97 /* Moduls.swift */,
+				3035DC90288BCF2200DD4F97 /* TextContents.swift */,
+			);
+			path = "Model ";
+			sourceTree = "<group>";
+		};
+		309378452887E1F20039C363 = {
+			isa = PBXGroup;
+			children = (
+				309378502887E1F20039C363 /* ProTalks */,
+				309378672887E1F50039C363 /* ProTalksTests */,
+				309378712887E1F50039C363 /* ProTalksUITests */,
+				3093784F2887E1F20039C363 /* Products */,
+				2E9C0B8A44B68DEFFBA97488 /* Pods */,
+				6F07D5EE5D0D10557A921439 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3093784F2887E1F20039C363 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3093784E2887E1F20039C363 /* ProTalks.app */,
+				309378642887E1F50039C363 /* ProTalksTests.xctest */,
+				3093786E2887E1F50039C363 /* ProTalksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		309378502887E1F20039C363 /* ProTalks */ = {
+			isa = PBXGroup;
+			children = (
+				3093785F2887E1F50039C363 /* Info.plist */,
+				309378532887E1F20039C363 /* SceneDelegate.swift */,
+				30937883288991470039C363 /* Presentation */,
+				3035DC8D288BCBC400DD4F97 /* Model  */,
+				309378812889900C0039C363 /* Application */,
+				30937882288990CD0039C363 /* Resources */,
+			);
+			path = ProTalks;
+			sourceTree = "<group>";
+		};
+		309378672887E1F50039C363 /* ProTalksTests */ = {
+			isa = PBXGroup;
+			children = (
+				309378682887E1F50039C363 /* ProTalksTests.swift */,
+			);
+			path = ProTalksTests;
+			sourceTree = "<group>";
+		};
+		309378712887E1F50039C363 /* ProTalksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				309378722887E1F50039C363 /* ProTalksUITests.swift */,
+				309378742887E1F50039C363 /* ProTalksUITestsLaunchTests.swift */,
+			);
+			path = ProTalksUITests;
+			sourceTree = "<group>";
+		};
+		309378812889900C0039C363 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				309378512887E1F20039C363 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		30937882288990CD0039C363 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3093785A2887E1F50039C363 /* Assets.xcassets */,
+				3093785C2887E1F50039C363 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30937883288991470039C363 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				30937884288991560039C363 /* HomePage */,
+				30937887288991960039C363 /* LearningPage */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		30937884288991560039C363 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				30937885288991800039C363 /* View */,
+				309378862889918A0039C363 /* ViewModel */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		30937885288991800039C363 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				309378572887E1F20039C363 /* HomeViewController.storyboard */,
+				309378552887E1F20039C363 /* HomeViewController.swift */,
+				3093788A288995320039C363 /* HomeCollectionView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		309378862889918A0039C363 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		30937887288991960039C363 /* LearningPage */ = {
+			isa = PBXGroup;
+			children = (
+				30937888288991A40039C363 /* View */,
+				30937889288991B30039C363 /* ViewModel */,
+			);
+			path = LearningPage;
+			sourceTree = "<group>";
+		};
+		30937888288991A40039C363 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30937889288991B30039C363 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3093788A288995320039C363 /* HomeCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3093788B2889955C0039C363 /* HomeCollectionViewController.swift */,
+			);
+			path = HomeCollectionView;
+			sourceTree = "<group>";
+		};
+		6F07D5EE5D0D10557A921439 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				519151F6187D3B8BA462320F /* Pods_ProTalks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3093784D2887E1F20039C363 /* ProTalks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 309378782887E1F50039C363 /* Build configuration list for PBXNativeTarget "ProTalks" */;
+			buildPhases = (
+				817D9182E5033E2D3896FA17 /* [CP] Check Pods Manifest.lock */,
+				3093784A2887E1F20039C363 /* Sources */,
+				3093784B2887E1F20039C363 /* Frameworks */,
+				3093784C2887E1F20039C363 /* Resources */,
+				808CEED33C557B13523CD38F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProTalks;
+			productName = ProTalks;
+			productReference = 3093784E2887E1F20039C363 /* ProTalks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		309378632887E1F50039C363 /* ProTalksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3093787B2887E1F50039C363 /* Build configuration list for PBXNativeTarget "ProTalksTests" */;
+			buildPhases = (
+				309378602887E1F50039C363 /* Sources */,
+				309378612887E1F50039C363 /* Frameworks */,
+				309378622887E1F50039C363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				309378662887E1F50039C363 /* PBXTargetDependency */,
+			);
+			name = ProTalksTests;
+			productName = ProTalksTests;
+			productReference = 309378642887E1F50039C363 /* ProTalksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3093786D2887E1F50039C363 /* ProTalksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3093787E2887E1F50039C363 /* Build configuration list for PBXNativeTarget "ProTalksUITests" */;
+			buildPhases = (
+				3093786A2887E1F50039C363 /* Sources */,
+				3093786B2887E1F50039C363 /* Frameworks */,
+				3093786C2887E1F50039C363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				309378702887E1F50039C363 /* PBXTargetDependency */,
+			);
+			name = ProTalksUITests;
+			productName = ProTalksUITests;
+			productReference = 3093786E2887E1F50039C363 /* ProTalksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		309378462887E1F20039C363 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3093784D2887E1F20039C363 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					309378632887E1F50039C363 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 3093784D2887E1F20039C363;
+					};
+					3093786D2887E1F50039C363 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 3093784D2887E1F20039C363;
+					};
+				};
+			};
+			buildConfigurationList = 309378492887E1F20039C363 /* Build configuration list for PBXProject "ProTalks" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 309378452887E1F20039C363;
+			productRefGroup = 3093784F2887E1F20039C363 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3093784D2887E1F20039C363 /* ProTalks */,
+				309378632887E1F50039C363 /* ProTalksTests */,
+				3093786D2887E1F50039C363 /* ProTalksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3093784C2887E1F20039C363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3093785E2887E1F50039C363 /* LaunchScreen.storyboard in Resources */,
+				3093785B2887E1F50039C363 /* Assets.xcassets in Resources */,
+				309378592887E1F20039C363 /* HomeViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309378622887E1F50039C363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3093786C2887E1F50039C363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		808CEED33C557B13523CD38F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProTalks/Pods-ProTalks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProTalks/Pods-ProTalks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProTalks/Pods-ProTalks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		817D9182E5033E2D3896FA17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProTalks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3093784A2887E1F20039C363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309378562887E1F20039C363 /* HomeViewController.swift in Sources */,
+				3093788C2889955C0039C363 /* HomeCollectionViewController.swift in Sources */,
+				309378522887E1F20039C363 /* AppDelegate.swift in Sources */,
+				3035DC8F288BCEAE00DD4F97 /* Moduls.swift in Sources */,
+				3035DC91288BCF2200DD4F97 /* TextContents.swift in Sources */,
+				309378542887E1F20039C363 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309378602887E1F50039C363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309378692887E1F50039C363 /* ProTalksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3093786A2887E1F50039C363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309378752887E1F50039C363 /* ProTalksUITestsLaunchTests.swift in Sources */,
+				309378732887E1F50039C363 /* ProTalksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		309378662887E1F50039C363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3093784D2887E1F20039C363 /* ProTalks */;
+			targetProxy = 309378652887E1F50039C363 /* PBXContainerItemProxy */;
+		};
+		309378702887E1F50039C363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3093784D2887E1F20039C363 /* ProTalks */;
+			targetProxy = 3093786F2887E1F50039C363 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		309378572887E1F20039C363 /* HomeViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				309378582887E1F20039C363 /* Base */,
+			);
+			name = HomeViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		3093785C2887E1F50039C363 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3093785D2887E1F50039C363 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		309378762887E1F50039C363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		309378772887E1F50039C363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		309378792887E1F50039C363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47F1BBB16F3CDE8E6CC52A4 /* Pods-ProTalks.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RNK62DS26;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProTalks/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = HomeViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nano2.ProTalks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3093787A2887E1F50039C363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82788231D7BAA3C0E7436571 /* Pods-ProTalks.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RNK62DS26;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProTalks/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = HomeViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nano2.ProTalks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3093787C2887E1F50039C363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RNK62DS26;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nano2.ProTalksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProTalks.app/ProTalks";
+			};
+			name = Debug;
+		};
+		3093787D2887E1F50039C363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RNK62DS26;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nano2.ProTalksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProTalks.app/ProTalks";
+			};
+			name = Release;
+		};
+		3093787F2887E1F50039C363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RNK62DS26;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nano2.ProTalksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProTalks;
+			};
+			name = Debug;
+		};
+		309378802887E1F50039C363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RNK62DS26;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nano2.ProTalksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProTalks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		309378492887E1F20039C363 /* Build configuration list for PBXProject "ProTalks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309378762887E1F50039C363 /* Debug */,
+				309378772887E1F50039C363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		309378782887E1F50039C363 /* Build configuration list for PBXNativeTarget "ProTalks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309378792887E1F50039C363 /* Debug */,
+				3093787A2887E1F50039C363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3093787B2887E1F50039C363 /* Build configuration list for PBXNativeTarget "ProTalksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3093787C2887E1F50039C363 /* Debug */,
+				3093787D2887E1F50039C363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3093787E2887E1F50039C363 /* Build configuration list for PBXNativeTarget "ProTalksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3093787F2887E1F50039C363 /* Debug */,
+				309378802887E1F50039C363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 309378462887E1F20039C363 /* Project object */;
+}
