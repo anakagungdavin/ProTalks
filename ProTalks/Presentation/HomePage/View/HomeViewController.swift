@@ -12,16 +12,25 @@ import RxCocoa
 class HomeViewController: UIViewController {
 
     let disposeBag = DisposeBag()
+    let viewModel = HomeViewModel()
     let modulsVar = Observable.just(listModuls)
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabelOne: UILabel!
+    @IBOutlet weak var titleLabelTwo: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        viewSetup()
+        bindCollData()
+//        collectionView.dataSource = self
+    }
+    
+    func viewSetup(){
         titleLabel.font = UIFont.boldSystemFont(ofSize: 26)
+        titleLabelOne.font = UIFont.systemFont(ofSize: 12, weight: .medium)
+        titleLabelTwo.font = UIFont.systemFont(ofSize: 12, weight: .medium)
     }
     
 }

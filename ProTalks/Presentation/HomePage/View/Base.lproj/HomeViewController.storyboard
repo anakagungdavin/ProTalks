@@ -53,7 +53,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jK-sT-25h">
-                                <rect key="frame" x="16" y="111" width="228.66666666666666" height="15"/>
+                                <rect key="frame" x="16" y="111" width="260" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Improve your speaking skill in">
@@ -84,7 +84,7 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tB-tf-BcC">
-                                <rect key="frame" x="16" y="129" width="139" height="15"/>
+                                <rect key="frame" x="16" y="129" width="250" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="choose your">
@@ -127,6 +127,8 @@
                     <connections>
                         <outlet property="collectionView" destination="LsY-KA-lp0" id="FPf-xB-ttJ"/>
                         <outlet property="titleLabel" destination="qXa-MP-MUm" id="irS-XH-hE0"/>
+                        <outlet property="titleLabelOne" destination="7jK-sT-25h" id="PdZ-D6-4Jp"/>
+                        <outlet property="titleLabelTwo" destination="9tB-tf-BcC" id="m96-pK-k9l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

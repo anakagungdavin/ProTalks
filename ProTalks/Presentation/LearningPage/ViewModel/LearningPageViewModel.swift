@@ -8,13 +8,17 @@
 import Foundation
 import Speech
 import UIKit
+import RxSwift
 
 final class LearningPageViewModel: UIViewController, SFSpeechRecognizerDelegate{
     
     let audioEngine = AVAudioEngine()
     let speechRecog: SFSpeechRecognizer? = SFSpeechRecognizer()
     let request = SFSpeechAudioBufferRecognitionRequest()
+//    let conditionVar = Observable.just(conditionText)
     var recognitionTask: SFSpeechRecognitionTask!
+    var bestString: String? = ""
+    var compareProcess = CompareViewModel()
     
     func alertView(message: String){
         let controller = UIAlertController.init(title: "Error occured", message: message, preferredStyle: .alert)
@@ -49,7 +53,6 @@ final class LearningPageViewModel: UIViewController, SFSpeechRecognizerDelegate{
     }
     
     func startSpeechRecog(textSpeech: UILabel){
-        var isFinal = false
         let node = audioEngine.inputNode
         let recordingFormat = node.outputFormat(forBus: 0)
         node.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, _) in
@@ -72,16 +75,18 @@ final class LearningPageViewModel: UIViewController, SFSpeechRecognizerDelegate{
             return
         }
         
-//        request.shouldReportPartialResults = false
+        request.shouldReportPartialResults = true
         
         //this where i can customize the word to be different color klo bener
-        recognitionTask = speechRecog?.recognitionTask(with: request, resultHandler: { (result, error) in
+        recognitionTask = speechRecog?.recognitionTask(with: request, resultHandler: { [self] (result, error) in
+//            var isFinal = true
+            
             if let result = result {
-                let bestString = result.bestTranscription.formattedString
-                textSpeech.text = bestString
+                self.bestString = result.bestTranscription.formattedString
+                textSpeech.text = self.bestString
                 
 //                isFinal = result.isFinal
-                print(bestString)
+                print(self.bestString ?? "")
                 
             } else if let error = error {
                 print(error)
@@ -91,13 +96,24 @@ final class LearningPageViewModel: UIViewController, SFSpeechRecognizerDelegate{
     }
     
     func cancelRecord(){
-        recognitionTask?.finish()
-        recognitionTask = nil
+        self.recognitionTask?.finish()
+        self.recognitionTask = nil
         
         // stop audio
-        request.endAudio()
-        audioEngine.stop()
-        audioEngine.inputNode.removeTap(onBus: 0)
+        self.request.endAudio()
+        self.audioEngine.stop()
+        self.audioEngine.inputNode.removeTap(onBus: 0)
+    }
+    
+    func compareSentence(sentenceModul: Array<String>) -> Bool{
+        //Process the comparison data
+        let tempSplitted = compareProcess.splitWord(sentences: bestString ?? "")
+        
+        if tempSplitted == sentenceModul{
+            return true
+        }else{
+            return false
+        }
     }
     
 }

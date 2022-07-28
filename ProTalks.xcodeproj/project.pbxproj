@@ -23,6 +23,7 @@
 		309378732887E1F50039C363 /* ProTalksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378722887E1F50039C363 /* ProTalksUITests.swift */; };
 		309378752887E1F50039C363 /* ProTalksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378742887E1F50039C363 /* ProTalksUITestsLaunchTests.swift */; };
 		30A5D2E228915B6200B3B7F9 /* CompareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A5D2E128915B6200B3B7F9 /* CompareViewModel.swift */; };
+		30D7EE072892599400F62701 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D7EE062892599400F62701 /* HomeViewModel.swift */; };
 		87B99B37742A0E388972A72F /* Pods_ProTalks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519151F6187D3B8BA462320F /* Pods_ProTalks.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		309378722887E1F50039C363 /* ProTalksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTalksUITests.swift; sourceTree = "<group>"; };
 		309378742887E1F50039C363 /* ProTalksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTalksUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		30A5D2E128915B6200B3B7F9 /* CompareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareViewModel.swift; sourceTree = "<group>"; };
+		30D7EE062892599400F62701 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		519151F6187D3B8BA462320F /* Pods_ProTalks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProTalks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82788231D7BAA3C0E7436571 /* Pods-ProTalks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProTalks.release.xcconfig"; path = "Target Support Files/Pods-ProTalks/Pods-ProTalks.release.xcconfig"; sourceTree = "<group>"; };
 		E47F1BBB16F3CDE8E6CC52A4 /* Pods-ProTalks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProTalks.debug.xcconfig"; path = "Target Support Files/Pods-ProTalks/Pods-ProTalks.debug.xcconfig"; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		309378862889918A0039C363 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				30D7EE062892599400F62701 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				309378562887E1F20039C363 /* HomeViewController.swift in Sources */,
 				309378522887E1F20039C363 /* AppDelegate.swift in Sources */,
 				303EE5D72890F1F800D79EDD /* LearningPageViewModel.swift in Sources */,
+				30D7EE072892599400F62701 /* HomeViewModel.swift in Sources */,
 				3035DC8F288BCEAE00DD4F97 /* Moduls.swift in Sources */,
 				30A5D2E228915B6200B3B7F9 /* CompareViewModel.swift in Sources */,
 				303EE5D52890299900D79EDD /* LearningPageController.swift in Sources */,

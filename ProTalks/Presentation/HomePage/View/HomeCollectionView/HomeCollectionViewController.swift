@@ -12,45 +12,35 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+extension HomeViewController: UICollectionViewDelegateFlowLayout{
     
-//    modulsVar.bind(to: collectionView
-//        .rx
-//        .items(cellIdentifier: "homeCollectionCell", cellType: UICollectionViewCell.self)
-//    ){ (row, item, cell) in
-//        cell.imageView?.image = UIImageView(image: UIImage(named: listModuls[indexPath.item].image!))
-//    }.disposed(by: disposeBag)
-//
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return listModuls.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCollectionCell" , for: indexPath) as! HomeCollectionCell
+    func bindCollData(){
+        modulsVar.bind(to: collectionView
+            .rx
+            .items(cellIdentifier: "homeCollectionCell", cellType: UICollectionViewCell.self)
+        ){ (row, item, cell) in
+            let modulImage = UIImage(named: item.image!)
+            let modulImageView = UIImageView(image: modulImage)
+            modulImageView.contentMode = .scaleAspectFill
+            modulImageView.frame.size = CGSize(width: 180, height: 200)
+            cell.addSubview(modulImageView)
+        }.disposed(by: disposeBag)
         
-        let modulImage = UIImage(named: listModuls[indexPath.item].image!)
-        let modulImageView = UIImageView(image: modulImage)
-        modulImageView.contentMode = .scaleAspectFill
-        modulImageView.frame.size = CGSize(width: 180, height: 200)
-    
-        cell.addSubview(modulImageView)
-        cell.backgroundColor = .red
+        collectionView.rx.setDelegate(self).disposed(by: disposeBag)
         
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        collectionView.deselectItem(at: indexPath, animated: true)
-        
-        let storyboard = UIStoryboard(name: "LearningPageController", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "LearningPageSB")
-        controller.modalPresentationStyle = .fullScreen
-        self.present(controller, animated: true, completion: nil)
-        
-//        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "LearningPageSB") as? LearningPageController{
-//            vc.modalPresentationStyle = .fullScreen
-//            self.present(vc, animated: true, completion: nil)
-//            }
+        collectionView.rx.modelSelected(Moduls.self).bind{ modul in
+            print(modul.contents?.TextPro![0] as Any)
+            
+            let storyboard = UIStoryboard(name: "LearningPageController", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "LearningPageSB") as? LearningPageController
+            
+//            controller?.textModul = modul.contents?.TextPro![0]
+            controller?.reactText.onNext((modul.contents?.TextPro!)!)
+            
+            controller?.modalPresentationStyle = .fullScreen
+            self.present(controller!, animated: true, completion: nil)
+            
+        }.disposed(by: disposeBag)
     }
     
     func collectionView(_ collectionView: UICollectionView,
