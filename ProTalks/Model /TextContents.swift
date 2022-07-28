@@ -8,5 +8,5 @@
 import Foundation
 
 struct TextContent{
-    var Text: [String]?
+    var TextPro: [String]?
 }

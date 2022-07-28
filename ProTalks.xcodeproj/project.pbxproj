@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3035DC8F288BCEAE00DD4F97 /* Moduls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3035DC8E288BCEAE00DD4F97 /* Moduls.swift */; };
 		3035DC91288BCF2200DD4F97 /* TextContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3035DC90288BCF2200DD4F97 /* TextContents.swift */; };
+		303EE5D1288FBF2B00D79EDD /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EE5D0288FBF2B00D79EDD /* HomeCollectionViewController.swift */; };
+		303EE5D32890298500D79EDD /* LearningPageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303EE5D22890298500D79EDD /* LearningPageController.storyboard */; };
+		303EE5D52890299900D79EDD /* LearningPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EE5D42890299900D79EDD /* LearningPageController.swift */; };
+		303EE5D72890F1F800D79EDD /* LearningPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EE5D62890F1F800D79EDD /* LearningPageViewModel.swift */; };
 		309378522887E1F20039C363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378512887E1F20039C363 /* AppDelegate.swift */; };
 		309378542887E1F20039C363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378532887E1F20039C363 /* SceneDelegate.swift */; };
 		309378562887E1F20039C363 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378552887E1F20039C363 /* HomeViewController.swift */; };
@@ -18,7 +22,7 @@
 		309378692887E1F50039C363 /* ProTalksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378682887E1F50039C363 /* ProTalksTests.swift */; };
 		309378732887E1F50039C363 /* ProTalksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378722887E1F50039C363 /* ProTalksUITests.swift */; };
 		309378752887E1F50039C363 /* ProTalksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309378742887E1F50039C363 /* ProTalksUITestsLaunchTests.swift */; };
-		3093788C2889955C0039C363 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3093788B2889955C0039C363 /* HomeCollectionViewController.swift */; };
+		30A5D2E228915B6200B3B7F9 /* CompareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A5D2E128915B6200B3B7F9 /* CompareViewModel.swift */; };
 		87B99B37742A0E388972A72F /* Pods_ProTalks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519151F6187D3B8BA462320F /* Pods_ProTalks.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +46,10 @@
 /* Begin PBXFileReference section */
 		3035DC8E288BCEAE00DD4F97 /* Moduls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moduls.swift; sourceTree = "<group>"; };
 		3035DC90288BCF2200DD4F97 /* TextContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextContents.swift; sourceTree = "<group>"; };
+		303EE5D0288FBF2B00D79EDD /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		303EE5D22890298500D79EDD /* LearningPageController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LearningPageController.storyboard; sourceTree = "<group>"; };
+		303EE5D42890299900D79EDD /* LearningPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningPageController.swift; sourceTree = "<group>"; };
+		303EE5D62890F1F800D79EDD /* LearningPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningPageViewModel.swift; sourceTree = "<group>"; };
 		3093784E2887E1F20039C363 /* ProTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309378512887E1F20039C363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		309378532887E1F20039C363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +63,7 @@
 		3093786E2887E1F50039C363 /* ProTalksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProTalksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		309378722887E1F50039C363 /* ProTalksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTalksUITests.swift; sourceTree = "<group>"; };
 		309378742887E1F50039C363 /* ProTalksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTalksUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3093788B2889955C0039C363 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		30A5D2E128915B6200B3B7F9 /* CompareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareViewModel.swift; sourceTree = "<group>"; };
 		519151F6187D3B8BA462320F /* Pods_ProTalks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProTalks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82788231D7BAA3C0E7436571 /* Pods-ProTalks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProTalks.release.xcconfig"; path = "Target Support Files/Pods-ProTalks/Pods-ProTalks.release.xcconfig"; sourceTree = "<group>"; };
 		E47F1BBB16F3CDE8E6CC52A4 /* Pods-ProTalks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProTalks.debug.xcconfig"; path = "Target Support Files/Pods-ProTalks/Pods-ProTalks.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +101,6 @@
 				E47F1BBB16F3CDE8E6CC52A4 /* Pods-ProTalks.debug.xcconfig */,
 				82788231D7BAA3C0E7436571 /* Pods-ProTalks.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -222,6 +229,8 @@
 		30937888288991A40039C363 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				303EE5D22890298500D79EDD /* LearningPageController.storyboard */,
+				303EE5D42890299900D79EDD /* LearningPageController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,6 +238,8 @@
 		30937889288991B30039C363 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				303EE5D62890F1F800D79EDD /* LearningPageViewModel.swift */,
+				30A5D2E128915B6200B3B7F9 /* CompareViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -236,7 +247,7 @@
 		3093788A288995320039C363 /* HomeCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				3093788B2889955C0039C363 /* HomeCollectionViewController.swift */,
+				303EE5D0288FBF2B00D79EDD /* HomeCollectionViewController.swift */,
 			);
 			path = HomeCollectionView;
 			sourceTree = "<group>";
@@ -358,6 +369,7 @@
 				3093785E2887E1F50039C363 /* LaunchScreen.storyboard in Resources */,
 				3093785B2887E1F50039C363 /* Assets.xcassets in Resources */,
 				309378592887E1F20039C363 /* HomeViewController.storyboard in Resources */,
+				303EE5D32890298500D79EDD /* LearningPageController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,9 +437,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				309378562887E1F20039C363 /* HomeViewController.swift in Sources */,
-				3093788C2889955C0039C363 /* HomeCollectionViewController.swift in Sources */,
 				309378522887E1F20039C363 /* AppDelegate.swift in Sources */,
+				303EE5D72890F1F800D79EDD /* LearningPageViewModel.swift in Sources */,
 				3035DC8F288BCEAE00DD4F97 /* Moduls.swift in Sources */,
+				30A5D2E228915B6200B3B7F9 /* CompareViewModel.swift in Sources */,
+				303EE5D52890299900D79EDD /* LearningPageController.swift in Sources */,
+				303EE5D1288FBF2B00D79EDD /* HomeCollectionViewController.swift in Sources */,
 				3035DC91288BCF2200DD4F97 /* TextContents.swift in Sources */,
 				309378542887E1F20039C363 /* SceneDelegate.swift in Sources */,
 			);
