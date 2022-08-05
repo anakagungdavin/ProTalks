@@ -7,7 +7,6 @@
 
 import Foundation
 import Speech
-import UIKit
 import RxSwift
 
 final class LearningPageViewModel: UIViewController, SFSpeechRecognizerDelegate{
